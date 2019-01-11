@@ -7,7 +7,6 @@ import {Quote} from './quote';
 })
 export class QuoteComponent implements OnInit {
   quotes: string[];
-  constructor() { }
 
   quotes=[
     new Quote (1, "Nara grace", "people who feel the need to control others do not have control over themselves");
