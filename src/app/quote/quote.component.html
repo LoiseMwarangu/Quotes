@@ -1,7 +1,10 @@
 <h1>Favorite Quotes</h1>
 <ul>
-  <div *ngFor='let quote of quotes'>
-    <li>{{quote}}</li>
-      <app-quote-details [goal]='goal'></app-quote-details>
+  <div *ngFor='let quote of quotes;let i=index'>
+    <li id={{i}}>{{quote.name}} posted on {{quote.completeDate|date}}</li>
+      <app-quote-details [quote]='quote'></app-quote-details>
+      <div class="row">
+          <app-quote-form></app-quote-form>
+       </div>
   </div> 
 </ul>
