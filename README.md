@@ -17,7 +17,7 @@ To access this project on your local files, you can clone it using these steps
 * This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4.
 * HTML
 * CSS
-* JavaScript
+* Angular js
 * Git
 ###Program Behaviour
 * The program contains two input options that the user is required to add information to.The user has to add their name and a quote of their choice then click on the post button.
