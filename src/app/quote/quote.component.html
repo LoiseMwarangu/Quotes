@@ -1,18 +1,15 @@
 <h1>Quote Nation</h1>
-<ul>
   <div class="container">
     <div *ngFor='let quote of quotes; let i=index'>
-    <li>{{quote.name}}</li>
-    <li>{{quote.description}}</li>
-    <li>"{{quote.author}}"</li>
-    <li id={{i}}> posted on {{quote.completeDate|date}}</li>
+    <div class=username>{{quote.name}}
+      </div>
+    <div class= sentence>{{quote.description}}</div>
+    <div class=writer>"{{quote.author}}"</div>
+    <div id={{i}}> posted on {{quote.completeDate|date}}</div>
       <app-quote-details *ngIf ="quote.showDescription" [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
-      <div class="row">
-          <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
        </div>
+       <div class="row">
+          <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
       </div> 
-      
-      
-  </div>
-
-</ul>
+      </div>
+  
