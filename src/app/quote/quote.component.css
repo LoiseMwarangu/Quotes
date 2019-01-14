@@ -1,4 +1,20 @@
- .writer{
-     float:right;
-     font-size: 20 px; 
+h1{
+    margin-left: 20%;
+    font-family:"courier New", Courier, monospace;
 }
+.writer{
+     float:right;
+     font-size: 20px; 
+}
+.sentence{
+    font-family:"courier New", Courier, monospace;
+    font-size: 30px;
+    border: 2px solid white;
+
+}
+.username{
+    font-family:"courier New", Courier, monospace;
+    font-size: 25px;
+    margin-left: 30%;
+}
+
