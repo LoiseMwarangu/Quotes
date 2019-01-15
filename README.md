@@ -1,12 +1,13 @@
+
 # Quote Nation
+
 ## Author
 Loise Mwarangu (https://github.com/LoiseMwarangu)
 # Description
 This is a web page that allows users to post ,upvote and downvote quotes.The user is also able to delete the quotes they have posted and see the number of upvotes and downvotes for every quote
-###Prerequisites
+### Prerequisites
 * An internet connection is important
 * You need to have git installed You can install it with the following command in your terminal $ sudo apt install git-all
-
 ## Setup
 To access this project on your local files, you can clone it using these steps
 * Open your terminal
@@ -27,5 +28,5 @@ To access this project on your local files, you can clone it using these steps
 # live link
 One can access the live website using this link  https://loisemwarangu.github.io/Quotes/
 
-# Licence
+# License
 This project is under the MIT licence

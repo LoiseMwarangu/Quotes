@@ -6,6 +6,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { QuoteComponent } from './quote/quote.component';
 import { QuoteDetailsComponent } from './quote-details/quote-details.component';
+
+
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { DateCountPipe } from './date-count.pipe';
 import { VotesComponent } from './votes/votes.component';
@@ -14,11 +16,13 @@ import { DownvoteButtonComponent } from './downvote-button/downvote-button.compo
 import { HighlighterComponent } from './highlighter/highlighter.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     QuoteComponent,
-    QuoteDetailsComponent,
+
+    QuoteDetailsComponenent,
     QuoteFormComponent,
     DateCountPipe,
     VotesComponent,
