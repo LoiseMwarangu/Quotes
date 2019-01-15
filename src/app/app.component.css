@@ -3,7 +3,7 @@
 }
 .images{
     opacity: 0.7;
-    filter: alpha(opacity=30);
+    filter: alpha(opacity=60);
     color:  white; 
 }
 app:hover {

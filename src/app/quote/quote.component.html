@@ -3,10 +3,11 @@
     <div *ngFor='let quote of quotes; let i=index'>
     <div class=username>{{quote.name}}
       </div>
-    <div class= sentence>Your {{quote.description}}</div>
-    <div class=writer>{{quote.author}}</div>
+    <div class= sentence>{{quote.description}}</div>
+    <button id="delete" (click)='quoteDelete(true)'>Delete this quote</button>
+    <div class=writer>"{{quote.author}}"</div>
     <div id={{i}}> posted on {{quote.completeDate|date}}</div>
-      <app-quote-details *ngIf ="quote.showDescription" [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
+      <app-quote-details [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
        </div>
        <br>
        <br>
