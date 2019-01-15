@@ -8,7 +8,7 @@ import {Quote} from '../quote';
 export class QuoteComponent implements OnInit {
   quotes=[
     new Quote(1, 'L Mwarangu', 'Fool me once,shame on you.fool me twice, that is weird i thought i murdered you', 'L Mwarangu' , new Date(2018,0,10)),
-    new Quote(2, 'Nara grace', 'people who feel the need to control others do not have control over themselves', 'anonymous' , new Date(2018,1,10)),
+    new Quote(2, 'Nara grace', 'people who feel the need to control others do not have control over themselves', 'Anonymous' , new Date(2018,1,10)),
     new Quote(3, 'shiny  people','if the road that you are on is perfectly clear,then you are probably on someone elses road', 'Kristine K. Stevens',new Date(2019,0,1) )
   ]
   addNewQuote(quote){
@@ -19,7 +19,7 @@ export class QuoteComponent implements OnInit {
   }
   deleteQuote(isComplete,index){
     if (isComplete){
-        let toDelete=confirm(`Are you sure you want to delete ${this.quotes[index].name}`)        
+        let toDelete=confirm(`Are you sure you want to delete "${this.quotes[index].description}"`)        
         if(toDelete){
             this.quotes.splice(index,1)
         }
