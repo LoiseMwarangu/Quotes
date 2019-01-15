@@ -11,6 +11,7 @@ import { DateCountPipe } from './date-count.pipe';
 import { VotesComponent } from './votes/votes.component';
 import { UpvoteButtonComponent } from './upvote-button/upvote-button.component';
 import { DownvoteButtonComponent } from './downvote-button/downvote-button.component';
+import { HighlighterComponent } from './highlighter/highlighter.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { DownvoteButtonComponent } from './downvote-button/downvote-button.compo
     VotesComponent,
     UpvoteButtonComponent,
     DownvoteButtonComponent,
+    HighlighterComponent,
 
   ],
   imports: [
