@@ -9,6 +9,12 @@ import { QuoteDetailsComponent } from './quote-details/quote-details.component';
 
 
 import { QuoteFormComponent } from './quote-form/quote-form.component';
+import { DateCountPipe } from './date-count.pipe';
+import { VotesComponent } from './votes/votes.component';
+import { UpvoteButtonComponent } from './upvote-button/upvote-button.component';
+import { DownvoteButtonComponent } from './downvote-button/downvote-button.component';
+import { HighlighterComponent } from './highlighter/highlighter.component';
+
 
 
 @NgModule({
@@ -16,10 +22,13 @@ import { QuoteFormComponent } from './quote-form/quote-form.component';
     AppComponent,
     QuoteComponent,
 
-    QuoteDetailsComponent
-
-    QuoteDetailsComponent,
-    QuoteFormComponent
+    QuoteDetailsComponenent,
+    QuoteFormComponent,
+    DateCountPipe,
+    VotesComponent,
+    UpvoteButtonComponent,
+    DownvoteButtonComponent,
+    HighlighterComponent,
 
   ],
   imports: [

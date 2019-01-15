@@ -1,10 +1,19 @@
-<h1>Favorite Quotes</h1>
-<ul>
-  <div *ngFor='let quote of quotes;let i=index'>
-    <li id={{i}}>{{quote.name}} posted on {{quote.completeDate|date}}</li>
-      <app-quote-details [quote]='quote'></app-quote-details>
-      <div class="row">
-          <app-quote-form></app-quote-form>
+<h1>Quote Nation</h1>
+  <div class="container">
+    <div *ngFor='let quote of quotes; let i=index'>
+    <div class=username>{{quote.name}}
+      </div>
+    <div class= sentence>Your {{quote.description}}</div>
+    <div class=writer>{{quote.author}}</div>
+    <div id={{i}}> posted on {{quote.completeDate|date}}</div>
+      <app-quote-details *ngIf ="quote.showDescription" [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
        </div>
-  </div> 
-</ul>
+       <br>
+       <br>
+       <p>Join the club!post your quote here and have it voted on by fellow users!</p>
+       <div class="row">
+          <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+          <!-- <app-quote-vote></app-quote-vote> -->
+      </div> 
+      </div>
+  

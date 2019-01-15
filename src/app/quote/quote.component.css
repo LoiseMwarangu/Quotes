@@ -1,0 +1,28 @@
+h1{
+    margin-left: 20%;
+    font-family:"courier New", Courier, monospace;
+}
+.writer{
+     float:right;
+     font-size: 20px; 
+}
+p{
+    font-size: 20px;
+    font-family:"courier New", Courier;
+    opacity: 0.7;
+    filter: alpha(opacity=50);
+    color:  white; 
+
+}
+.sentence{
+    font-family:"courier New", Courier, monospace;
+    font-size: 30px;
+    border: 2px solid white;
+
+}
+.username{
+    font-family:"courier New", Courier, monospace;
+    font-size: 25px;
+    margin-left: 30%;
+}
+
