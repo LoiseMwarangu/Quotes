@@ -2,8 +2,8 @@
     background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/07/Download-Free-Inspirational-Quotes-Wallpaper.jpg");
 }
 .images{
-    opacity: 0.7;
-    filter: alpha(opacity=30);
+    opacity: 0.9;
+    filter: alpha(opacity=60);
     color:  white; 
 }
 app:hover {

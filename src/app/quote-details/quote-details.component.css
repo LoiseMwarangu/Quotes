@@ -1,0 +1,10 @@
+button{
+    opacity: 0.9;
+    filter: alpha(opacity=60);
+    color:  white; 
+    background-color: gray;
+}
+button:hover{
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
